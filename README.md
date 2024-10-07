@@ -18,9 +18,8 @@ The **Free IPTV Channels App** is a user-friendly application that allows users 
 
 Below are some screenshots showcasing the app's interface and features:
 
-![Home Screen](path/to/screenshot1.png) <!-- Replace with actual screenshot path -->
-![Channel List](path/to/screenshot2.png) <!-- Replace with actual screenshot path -->
-![Video Player](path/to/screenshot3.png) <!-- Replace with actual screenshot path -->
+![Home Screen](screenshot1.png) <!-- Replace with actual screenshot path -->
+![Video Player](screenshot3.png) <!-- Replace with actual screenshot path -->
 
 ## Future Development Plans
 
