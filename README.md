@@ -32,6 +32,9 @@ We aim to enhance the **Free IPTV Channels App** further by:
 
 To achieve these goals, we are seeking financial support for development and enhancement of the app. Your contribution will directly impact the app’s capabilities and allow us to provide a better streaming experience for users. 
 
+[Buy Me a Coffee](https://www.buymeacoffee.com/kamalsoni)
+
+
 ### How You Can Help
 
 - **Sponsorship**: Consider becoming a sponsor for the app.
@@ -51,5 +54,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 We would like to thank all our users for their support and feedback. Your input helps us create a better product!
 
 
-
-[Buy Me a Coffee](https://www.buymeacoffee.com/yourusername)
