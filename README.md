@@ -1,8 +1,6 @@
 
 # Free IPTV Channels App
 
-![App Logo](path/to/logo.png) <!-- Replace with your app logo path -->
-
 ## Overview
 
 The **Free IPTV Channels App** is a user-friendly application that allows users to stream free channels from various sources using IPTV technology. Designed for simplicity and efficiency, the app provides an engaging viewing experience for users looking for diverse content.
@@ -51,3 +49,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 We would like to thank all our users for their support and feedback. Your input helps us create a better product!
+
+
+
+[Buy Me a Coffee](https://www.buymeacoffee.com/yourusername)
