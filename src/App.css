@@ -14,18 +14,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #181818; /* Dark background */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #f5f5f5; /* Lighter text */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* Keep link color for contrast */
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +35,237 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Custom CSS for the menu */
+.menu {
+  background-color: #181818; /* Dark background */
+  padding: 20px;
+  color: #f5f5f5; /* Light text */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu h1 {
+  margin: 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0 10px;
+  cursor: pointer;
+  color: #f5f5f5; /* Light text */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 300px; /* Adjust the width as needed */
+  background-color: #2a2a2a; /* Dark input background */
+  color: #f5f5f5; /* Light text */
+}
+
+.channel-list {
+  padding: 20px;
+}
+
+.channel-grid-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.channel-grid {
+  display: flex; /* Use flexbox for horizontal alignment */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  padding: 10px 0; /* Optional: adds padding to the top and bottom */
+}
+
+.channel-grid::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome, Safari, and Edge */
+}
+
+.channel-item {
+  width: 180px; /* Set a fixed width for each channel item */
+  height: 80px; /* Set a fixed height for each channel item */
+  margin-right: 10px; /* Space between items */
+  cursor: pointer;
+  padding: 10px; /* Adds padding around the item */
+  background-color: #2a2a2a; /* Dark background for items */
+  border-radius: 5px; /* Rounded corners */
+  color: #f5f5f5; /* Light text */
+  display: flex; /* Use flexbox for centering content */
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  transition: transform 0.2s; /* Smooth scaling transition */
+  text-align: center; /* Center text */
+}
+
+/* Optional: Add a class to handle item overflow */
+.channel-item img {
+  max-width: 100%; /* Ensures images do not exceed item width */
+  max-height: 70%; /* Control the height of images */
+  object-fit: cover; /* Crop images to fit */
+}
+
+.channel-item:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Video Player */
+.video-player {
+  width: 100%; /* Ensure the video fills the width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.player-container {
+  position: fixed;
+  top: 0; /* Fullscreen */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* Black background for player */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f5; /* Light text */
+}
+
+.channel-title {
+  margin: 0;
+  font-size: 24px; /* Title font size */
+  padding: 10px;
+  text-align: center;
+}
+
+/* Button Styling */
+.back-button {
+  background-color: #007bff; /* Bootstrap-like blue */
+  color: #f5f5f5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.fullscreen-button {
+  background-color: transparent; /* Transparent background */
+  color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px; /* Space between buttons */
+}
+
+.fullscreen-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slight background change on hover */
+}
+
+/* Scrolling Buttons */
+.scroll-button-left,
+.scroll-button-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-button-left {
+  left: 10px; /* Position left button on the left side */
+}
+
+.scroll-button-right {
+  right: 10px; /* Position right button on the right side */
+}
+
+.scroll-button-left:hover,
+.scroll-button-right:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darken background on hover */
+}
+
+.inside-channel-grid-font {
+  font-size: medium;
+  color: #f5f5f5;
+}
+
+/* App Layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+/* Overlay for video title */
+.overlay {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: #f5f5f5; /* Light text */
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.channel-title {
+  margin: 0;
+  margin-right: 10px; /* Space between title and button */
+  font-size: 20px;
+}
+
+.back-button {
+  background-color: transparent;
+  color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slight background change on hover */
 }
